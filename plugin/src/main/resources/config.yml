@@ -1,0 +1,53 @@
+sql:
+  host:
+  port: 3306
+  database:
+  username:
+  password:
+
+bot_token: "bot token"
+guild_id: "guild id" # Must have quotes
+
+ranks:
+  vip: "id of vip rank"
+  mvp: "id of mvp rank"
+
+# Lower case names
+# of groups that
+# should not be able
+# to sync their rank
+excluded_groups:
+- "owner"
+
+commands:
+- "msg {player} Your discord role was synced"
+
+# The time in seconds after which a key should timeout
+key_timeout: 30
+
+# The interval in minutes between checking if users have their account synced
+# Every user who does not have their linked will be sent the "no_synced" message
+# Users who are linked will have their roles updated
+check_interval: 20
+
+messages:
+  player_only: "&cOnly players can use the link command"
+
+  link_command_usage: "&cUsage: /link <key>"
+
+  already_synced: "&aYour discord account is already linked"
+  not_synced: "&cYour discord account is not synced! We recommend you do it"
+
+  rank_excluded: "&cYour rank is excluded from syncing with discord"
+
+  no_awaiting_key: "&cYou have not generated a key yet"
+  key_invalid: "&cInvalid key, try again or generate a new one"
+  key_expired: "&cThat key has expired, generate a new one and try again"
+
+  rank_no_role: "&cYour rank does not have an equivalent discord role"
+  error_syncing_role: "&cThere was an error syncing your rank, ask an admin to check the logs"
+
+  role_synced: "&aYour rank was synced with discord"
+  role_synced_auto: "" # When a player's role is automatically updated after periodic checking. By default no message is sent
+
+

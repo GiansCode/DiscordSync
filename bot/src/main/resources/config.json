@@ -1,0 +1,20 @@
+{
+  "bot_token": "bot token",
+  "guild_id": "guild id",
+  "sql": {
+    "host": "",
+    "port": 3306,
+    "database": "",
+    "username": "",
+    "password": ""
+  },
+  "link_command": "!link",
+  "key_expiration_time": 30,
+  "messages": {
+    "already_synced": "%tag% - Your account is already synced",
+    "link_command_usage": "%tag% - Usage: /link <ign>",
+    "key_generated": "%tag% - Your key is {key} - Enter it on the server with `/link {key}`",
+    "user_awaiting_token": "%tag% - That user already has a key generated, try again later",
+    "token_already_generated": "%tag% - You have already generated a key recently, try again later"
+  }
+}

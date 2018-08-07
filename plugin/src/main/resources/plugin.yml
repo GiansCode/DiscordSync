@@ -1,0 +1,9 @@
+name: DiscordSync
+version: ${project.version}
+author: Mas281
+main: com.thesquadmc.discordsync.plugin.DiscordSync
+
+depend: [Vault]
+
+commands:
+  link:
